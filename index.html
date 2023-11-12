@@ -1,0 +1,93 @@
+<!--
+Contenu du projet html/css:
+3 pages(Accueil,Modèles et Fonctionnalités)
+2 liens (Facebook et Site Officiel de Tesla)
+Je sais que vous aviez dit qu'il était préférable de ne mettre 
+aucun code css dans le html mais je n'ai pas réussi à faire autrement. Désolé :( 
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club des Fans de Tesla</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body style="background-color: #f2f2f2; color: #333333; font-family: 'Helvetica', 'Arial', sans-serif;">
+
+    <header style="background-color: #000000; text-align: center; padding: 20px;">
+        <h1 style="color: #ffcc00; font-family: 'Pacifico', cursive; font-size: 2.5em;">Tesla Fan Club</h1>
+    </header>
+    
+    <nav style="background-color: #ffcc00;">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="modeles.html">Modèles</a></li>
+            <li><a href="fonctionnalites.html">Fonctionnalités</a></li>
+            <li><a href="#gallery">Galerie</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Bienvenue sur le site du Club des Fans de Tesla !</h1>
+        <p>Rejoignez-nous pour partager votre amour pour les voitures Tesla.</p>
+       
+    </section>
+
+    <section id="models" style="background-color: #ffffff;">
+        <h2>Modèles Tesla</h2>
+        <div class="model-gallery">
+           
+        </div>
+    </section>
+
+    <section id="features">
+        <h2>Fonctionnalités des voitures Tesla</h2>
+        <ul>
+              <li>Autopilote</li>
+                <li>Performances exceptionnelles</li>
+           
+        </ul>
+    </section>
+
+    <section id="gallery">
+        <h2>Galerie Tesla</h2>
+        <div class="image-gallery">
+        
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form>
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>      <!--faux support-->          
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+        <p>Suivez-nous sur :</p>
+        
+        <ul>
+            <li><a href="https://www.facebook.com/ClubDesFansDeTesla">Facebook</a></li>
+            
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Club des Fans de Tesla. Tous droits réservés.</p> <!--le truc copy c'est pour le logo officiel le c bizzare-->
+        <ul>
+            <li><a href="https://www.tesla.com/">Site officiel de Tesla</a></li> <!--site tesla-->
+        
+        </ul>
+    </footer>
+
+</body>
+</html>
